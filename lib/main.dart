@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mws_task/view/home/home_page.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -9,8 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      
+    return const MaterialApp(
+      home: HomeScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
